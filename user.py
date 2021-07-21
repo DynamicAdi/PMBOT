@@ -28,23 +28,7 @@ except AttributeError as e:
     print(str(e))
  
  # for outgoing of message
-class Users(BASE):
-    """ Table to store the received messages """
-    __tablename__ = "users"
-    message_id = Column(Integer, primary_key=True)
-    chat_id = Column(String(14))
-    um_id = Column(Integer)
 
-    def __init__(self, message_id, chat_id, um_id):
-        self.message_id = message_id
-        self.chat_id = str(chat_id)  # ensure string
-        self.um_id = um_id
-
-    def __repr__(self):
-        return "<User %s>" % self.chat_id
-
-
-Users.__table__.create(checkfirst=True)
 
 
 def get_user_id(message_id: int):
