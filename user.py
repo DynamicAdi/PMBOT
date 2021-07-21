@@ -14,8 +14,8 @@ from config import config
 # Sql 
 
 
-    BASE = declarative_base()
-    SESSION = start()
+BASE = declarative_base()
+SESSION = start()
 
 
 
