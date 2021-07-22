@@ -231,7 +231,7 @@ async def one_new_mssg(event):
 async def out_mssg(event):
     msg = event.raw_text
     reply = event.sender_id
-    user = await event.get_reply_message().id
+    user = await event.get_reply_message()
     await pm.send_message(reply, msg)
     
 # below is startup
