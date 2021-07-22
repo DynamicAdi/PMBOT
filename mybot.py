@@ -228,11 +228,11 @@ async def one_new_mssg(event):
 ## [<---outgoing--->] ##
 
 @pm.on(events.NewMessage(func=lambda e: e.is_private))
-async def on_out_mssg(event):
+async def out_mssg(event):
     msg = event.raw_text
     reply = event.sender_id
     user = await event.get_reply_message().id
-    await pm.send_message(user, msg)
+    await pm.send_message(reply, msg)
     
 # below is startup
 
