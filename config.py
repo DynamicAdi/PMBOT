@@ -1,9 +1,9 @@
 import os 
 
 class config(object):
-  API_ID = 2443790
-  API_HASH = "b00e27babc25c281d2ec18242b5b6760"
-  TOKEN = "1905648151:AAH4DNh2VneV_VQ3v2MTc0dEbZbVwFrz8dQ"
+  API_ID = int(os.environ.get("API_ID", 6))
+  API_HASH = os.environ.get("API_HASH", "")
+  TOKEN = os.environ.get("TOKEN", "")
 # NO EDITS 
   PIC = "https://telegra.ph/file/124965f314c03a415f1c4.jpg"
   OWNER_USERNAME = "Alone_loverboy"
