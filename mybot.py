@@ -237,14 +237,10 @@ async def one_new_mssg(event):
    
 # {Pyrogram} #
 ## [<---outgoing--->] ##
-@pmbot.on_message(filters.reply & filters.chat(1258905497))
-async def reply_to_users(_, m: Message):
-    replied = m.reply_to_message
-    await m.copy(replied.forward_from.id)
 
 # below is startup
 
 pm.run_until_disconnected()
-pmbot.run()
+
 
 # chal jaana 😭
