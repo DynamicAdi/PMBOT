@@ -108,7 +108,7 @@ async def tele(event):
             ],
             [
              Button.url("Quotes✍️", url="https://t.me/Itz_loverboy"),
-             Button.url("UserBoT", url="http://t.me/AlphaX_OT")],
+             Button.url("UserBoT", url="http://t.me/Astro_UserBot")],
              [Button.inline("Back🚶", data="ok")]
              ])
            
