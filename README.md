@@ -1,7 +1,7 @@
 # PMBOT 
-<hr>
+
 # [![✨](https://telegra.ph/file/82eeadb54342995110903.jpg)](https://t.me/LbjiBot) <br>THIS IS MY BOT 
-<hr>
+
 ## Find ON [TELEGRAM](https://t.me/LbjiBot)<br>BY CLICKING ON PICTURE
 
 
