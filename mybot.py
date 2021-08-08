@@ -46,7 +46,7 @@ __Follow HIM IN INSTAGRAM AND TWITTER 😁🤩__\n
 **CHOOSE WHY ARE YOU HERE:**
 """
 
-)
+
 SOCIAL = f"""
 H!👀 Welcome To Social menu 
 {USERNAME} social media Is here✨
