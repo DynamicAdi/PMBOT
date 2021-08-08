@@ -5,7 +5,7 @@ class config(object):
   API_HASH = os.environ.get("API_HASH", "")
   TOKEN = os.environ.get("TOKEN", "")
 # NO EDITS 
-  PIC = "https://telegra.ph/file/124965f314c03a415f1c4.jpg"
+  PIC = "https://telegra.ph/file/42aa88442d9266468d11a.jpg"
   OWNER_USERNAME = "Alone_loverboy"
   OWNER_ID = 1258905497 
   DB_URI = os.environ.get("DATABASE_URL", None)
