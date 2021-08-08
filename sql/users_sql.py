@@ -9,7 +9,7 @@ from sqlalchemy import (
     String,
     Integer
 )
-from . import (
+from sql import (
     SESSION,
     BASE
 )
