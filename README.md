@@ -5,7 +5,10 @@
 ## Find ON [TELEGRAM](https://t.me/LbjiBot)<br>BY CLICKING ON PICTURE
 ```python3
 READ CODES
-only for Learning purpose 
+only for Learning purpose  
+
+All © reserved by @Alone_loverboy
+
 ```
 # ~ [Psycho_Bots](https://t.me/Psycho_Bots)
 # ~ [Alone_loverBoy](https://t.me/Alone_loverboy)
