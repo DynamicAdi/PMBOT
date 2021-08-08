@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
 
 """ users Table """
 
@@ -9,10 +6,7 @@ from sqlalchemy import (
     String,
     Integer
 )
-from sql import (
-    SESSION,
-    BASE
-)
+from . import SESSION, BASE
 
 
 class Users(BASE):
