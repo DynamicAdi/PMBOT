@@ -4,6 +4,7 @@ class config(object):
   API_ID = int(os.environ.get("API_ID", 6))
   API_HASH = os.environ.get("API_HASH", "")
   TOKEN = os.environ.get("TOKEN", "")
+  STRING_SESSION = os.environ.get("STRING_SESSION", "")
 # NO EDITS 
   PIC = "https://telegra.ph/file/42aa88442d9266468d11a.jpg"
   OWNER_USERNAME = "Alone_loverboy"
