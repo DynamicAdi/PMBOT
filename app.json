@@ -18,6 +18,10 @@
         },
         "API_HASH": {
             "description": "Your API_HASH from https://my.telegram.org/apps"
+        },
+        "STRING_SESSION": {
+            "description": "Your String_Session",
+            "value": ""
         }
     },
     "buildpacks": [
