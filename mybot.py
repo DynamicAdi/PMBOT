@@ -3,7 +3,7 @@ import os
 import re
 import html
 import time 
-from sql.users_sql import get_user_id
+
 from datetime import datetime
 ### imports == Telethon 
 from telethon import Button 
@@ -242,29 +242,15 @@ async def one_new_mssg(event):
 # {Pyrogram} #
 ## [<---outgoing--->] ##
 
-@pm.on(events.NewMessage(func=lambda e: e.is_private))
-async def on_out_mssg(event):
-    to_send = await event.get_reply_message()
-    if to_send is None:
-        return
-    to_send.id
-    send_mssg = event.raw_text
-    who = event.sender_id
-    user_id, reply_message_id = get_user_id(to_send.id)
-    if who == OWNER_ID:
-        if send_mssg.startswith("/"):
 
-            retur
 
-        if event.text is not None and event.media:
 
-            # if sending media
 
-            bot_api_file_id = pack_bot_file_id(event.media)
+    
+  
 
-            await pm.send_file(user_id, file=bot_api_file_id, caption=event.text, reply_to=reply_message_id)
 
-        else:
+
 
 
 
