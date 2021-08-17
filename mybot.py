@@ -3,14 +3,14 @@ import os
 import re
 import html
 import time 
-
+from sql.users_sql import get_user_id
 from datetime import datetime
 ### imports == Telethon 
 from telethon import Button 
 from telethon import events 
 from telethon import TelegramClient 
 from telethon.utils import pack_bot_file_id
-
+from telethon.sessions import StringSession
 
 
 # config # 
