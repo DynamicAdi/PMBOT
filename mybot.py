@@ -30,17 +30,17 @@ API_ID = config.API_ID
 API_HASH = config.API_HASH
 TOKEN = config.TOKEN
 
-if config.STRING_SESSION:
 
-    session_name = str(config.STRING_SESSION)
 
-    pm = TelegramClient(StringSession(session_name), config.APP_ID, config.API_HASH).start(bot_token=TOKEN)
 
-else:
 
-    session_name = "startup"
+pm = TelegramClient(APP_ID, API_HASH).start(bot_token=TOKEN)
 
-    pm = TelegramClient(session_name, config.APP_ID, config.API_HASH).start(bot_token=TOKEN)
+
+
+
+
+
  
 # <----Setup Finished----> #
 # <i> © @Alone_loverboy <i/> #
@@ -254,7 +254,7 @@ async def on_out_mssg(event):
     if who == OWNER_ID:
         if send_mssg.startswith("/"):
 
-            return
+            retur
 
         if event.text is not None and event.media:
 
@@ -266,7 +266,7 @@ async def on_out_mssg(event):
 
         else:
 
-            await pm.send_message(user_id, send_mssg, reply_to=reply_message_id,)
+
 
 
 # below is startup
