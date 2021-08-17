@@ -35,7 +35,7 @@ TOKEN = config.TOKEN
 
 
 
-pm = TelegramClient(API_ID, API_HASH).start(bot_token=TOKEN)
+pm = TelegramClient("lover", API_ID, API_HASH).start(bot_token=TOKEN)
 
 
 
