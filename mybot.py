@@ -30,7 +30,18 @@ API_ID = config.API_ID
 API_HASH = config.API_HASH
 TOKEN = config.TOKEN
 
-pm = TelegramClient('pm', API_ID, API_HASH).start(bot_token=TOKEN) 
+if config.STRING_SESSION:
+
+    session_name = str(config.STRING_SESSION)
+
+    pm = TelegramClient(StringSession(session_name), config.APP_ID, config.API_HASH).start(bot_token=TOKEN)
+
+else:
+
+    session_name = "startup"
+
+    pm = TelegramClient(session_name, config.APP_ID, config.API_HASH).start(bot_token=TOKEN)
+ 
 # <----Setup Finished----> #
 # <i> © @Alone_loverboy <i/> #
 
