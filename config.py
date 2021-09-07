@@ -1,10 +1,10 @@
 import os 
 
 class config(object):
-  API_ID = int(os.environ.get("API_ID", 6))
-  API_HASH = os.environ.get("API_HASH", "")
-  TOKEN = os.environ.get("TOKEN", "")
-  STRING_SESSION = os.environ.get("STRING_SESSION", "")
+  API_ID = 2443790
+  API_HASH = "b00e27babc25c281d2ec18242b5b6760"
+  TOKEN = "1979779416:AAExgRiGv4aO0_7rbKjhOx_oOUXtWvKP9zw"
+
 # NO EDITS 
   PIC = "https://telegra.ph/file/42aa88442d9266468d11a.jpg"
   OWNER_USERNAME = "Alone_loverboy"
