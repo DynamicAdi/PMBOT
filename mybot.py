@@ -231,7 +231,7 @@ from telethon.utils import pack_bot_file_id
 
 OWNER_ID = 1258905497
 
-@tgbot.on(events.NewMessage(func=lambda e: e.is_private))
+@pm.on(events.NewMessage(func=lambda e: e.is_private))
 
 async def on_out_mssg(event):
 
