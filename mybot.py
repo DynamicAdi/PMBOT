@@ -231,6 +231,8 @@ from telethon.utils import pack_bot_file_id
 
 OWNER_ID = 1258905497
 
+
+
 @pm.on(events.NewMessage(func=lambda e: e.is_private))
 
 async def on_out_mssg(event):
@@ -247,8 +249,6 @@ async def on_out_mssg(event):
 
     who = event.chat_id
 
-    user_id, reply_message_id = sender
-
     if who == OWNER_ID:
 
         if send_mssg.startswith("/"):
@@ -261,11 +261,18 @@ async def on_out_mssg(event):
 
             bot_api_file_id = pack_bot_file_id(event.media)
 
-            await tgbot.send_file(user_id, file=bot_api_file_id, caption=event.text, reply_to=reply_message_id)
+            await pm.send_file(sender, file=bot_api_file_id, caption=event.text)
 
         else:
 
-            await tgbot.send_message(user_id, send_mssg, reply_to=reply_message_id,)
+            await pm.send_message(sender, send_mssg)
+
+
+
+
+
+
+
 
 # below is startup
 
