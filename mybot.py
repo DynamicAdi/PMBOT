@@ -223,55 +223,8 @@ async def one_new_mssg(event):
         await event.get_sender()
         event.chat_id
         await event.forward_to(OWNER_ID)
-        
-# OUTGOING 
-from telethon import events
 
-from telethon.utils import pack_bot_file_id
-
-OWNER_ID = 1258905497
-
-
-
-@pm.on(events.NewMessage(func=lambda e: e.is_private))
-
-async def on_out_mssg(event):
-
-    to_send = await event.get_reply_message()
-
-    if to_send is None:
-
-        return
-
-    sender = event.chat_id
-
-    send_mssg = event.raw_text
-
-    who = event.chat_id
-
-    if who == OWNER_ID:
-
-        if send_mssg.startswith("/"):
-
-            return
-
-        if event.text is not None and event.media:
-
-            # if sending media
-
-            bot_api_file_id = pack_bot_file_id(event.media)
-
-            await pm.send_file(sender, file=bot_api_file_id, caption=event.text)
-
-        else:
-
-            await pm.send_message(sender, send_mssg)
-
-
-
-
-
-
+    
 
 
 # below is startup
